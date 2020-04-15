@@ -1,0 +1,4 @@
+/Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.csprojAssemblyReference.cache
+/Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.csproj.CoreCompileInputs.cache
+/Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.AssemblyInfoInputs.cache
+/Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.AssemblyInfo.cs
