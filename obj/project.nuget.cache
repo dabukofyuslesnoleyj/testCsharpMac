@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6dJMTYeBfAYgH14Up6JKqcCYWqGeUdjdb8LGVS9ipYkNil/BKncHc5JD2WMTykP4yY9RW5B93DqPSBnUOa1SYQ==",
+  "dgSpecHash": "gTh3fpuVLs/hHsJzQQvZqqKnGb4fAM7d1yKRqo/0hTNgoHfnyCmaRdJ0KoX0eDGxGocSeAGT+DaXMygAsaTUkw==",
   "success": true,
   "projectFilePath": "/Users/donnafefabian/Documents/testCsharp/testCsharp.csproj",
   "expectedPackageFiles": [
     "/Users/donnafefabian/.nuget/packages/csvhelper/15.0.4/csvhelper.15.0.4.nupkg.sha512",
+    "/Users/donnafefabian/.nuget/packages/json.net/1.0.18/json.net.1.0.18.nupkg.sha512",
     "/Users/donnafefabian/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512"
   ],
   "logs": []

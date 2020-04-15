@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "testCsharp/1.0.0": {
         "dependencies": {
-          "CsvHelper": "15.0.4"
+          "CsvHelper": "15.0.4",
+          "Json.Net": "1.0.18"
         },
         "runtime": {
           "testCsharp.dll": {}
@@ -22,6 +23,14 @@
           "lib/netstandard2.1/CsvHelper.dll": {
             "assemblyVersion": "15.0.0.0",
             "fileVersion": "15.0.4.0"
+          }
+        }
+      },
+      "Json.Net/1.0.18": {
+        "runtime": {
+          "lib/netstandard2.0/Json.Net.dll": {
+            "assemblyVersion": "1.0.18.1",
+            "fileVersion": "1.0.18.1"
           }
         }
       },
@@ -40,6 +49,13 @@
       "sha512": "sha512-DZKRvcaA76SEHNN/nU/DdNxHCUI86FqmjAuJvk9XTSEgeMLvzjCMsDdnCYs9pVp694Z0GN3o5i5hsvtIyrzZ+Q==",
       "path": "csvhelper/15.0.4",
       "hashPath": "csvhelper.15.0.4.nupkg.sha512"
+    },
+    "Json.Net/1.0.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LeHX1l1FbTeg5C6rvx19qE/OLrPM7ggmlMBJgu08bcMn9anbE0SEF3BXwhUrio8/f0445XJnAaE5gmhqRCEuzw==",
+      "path": "json.net/1.0.18",
+      "hashPath": "json.net.1.0.18.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",

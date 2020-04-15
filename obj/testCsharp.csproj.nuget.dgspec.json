@@ -39,6 +39,10 @@
             "CsvHelper": {
               "target": "Package",
               "version": "[15.0.4, )"
+            },
+            "Json.Net": {
+              "target": "Package",
+              "version": "[1.0.18, )"
             }
           },
           "imports": [

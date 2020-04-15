@@ -12,3 +12,4 @@
 /Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.genruntimeconfig.cache
 /Users/donnafefabian/Documents/testCsharp/bin/Debug/netcoreapp3.1/CsvHelper.dll
 /Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.csproj.CopyComplete
+/Users/donnafefabian/Documents/testCsharp/bin/Debug/netcoreapp3.1/Json.Net.dll
