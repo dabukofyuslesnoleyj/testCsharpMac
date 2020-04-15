@@ -16,12 +16,6 @@ namespace testCsharp
         public string Name { get; set; }
     }
 
-    public class PersonList
-    {
-        public List<Person> persons{ get; set; }
-
-    }
-
     class Program
     {
         static void Main(string[] args)
@@ -56,12 +50,9 @@ namespace testCsharp
 
             List<Person> jsonlist = JsonNet.Deserialize<List<Person>>(datalist);
             
-            foreach (Person data in jsonlist){
+            foreach (Person data in jsonlist)
                 Console.WriteLine(data.Name);
-            }
-            // output = output.Remove(output.Length - 1, 1); 
-            // Console.WriteLine(output);
-            // output += "]\n}";
+            
 
             File.WriteAllText("sample_json.json", datalist);
 
