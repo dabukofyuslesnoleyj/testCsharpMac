@@ -2,3 +2,13 @@
 /Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.csproj.CoreCompileInputs.cache
 /Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.AssemblyInfoInputs.cache
 /Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.AssemblyInfo.cs
+/Users/donnafefabian/Documents/testCsharp/bin/Debug/netcoreapp3.1/testCsharp.deps.json
+/Users/donnafefabian/Documents/testCsharp/bin/Debug/netcoreapp3.1/testCsharp.runtimeconfig.json
+/Users/donnafefabian/Documents/testCsharp/bin/Debug/netcoreapp3.1/testCsharp.runtimeconfig.dev.json
+/Users/donnafefabian/Documents/testCsharp/bin/Debug/netcoreapp3.1/testCsharp.dll
+/Users/donnafefabian/Documents/testCsharp/bin/Debug/netcoreapp3.1/testCsharp.pdb
+/Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.dll
+/Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.pdb
+/Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.genruntimeconfig.cache
+/Users/donnafefabian/Documents/testCsharp/bin/Debug/netcoreapp3.1/CsvHelper.dll
+/Users/donnafefabian/Documents/testCsharp/obj/Debug/netcoreapp3.1/testCsharp.csproj.CopyComplete

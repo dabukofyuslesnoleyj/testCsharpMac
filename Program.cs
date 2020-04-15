@@ -1,13 +1,40 @@
 ﻿using System;
+using System.IO;
+using System.Globalization;
+using CsvHelper;
+
 
 namespace testCsharp
 {
+
+    public class Person
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("KMP");
+            // string sample_text = "Hello World \n KMP";
+            
+            // Console.WriteLine(sample_text);
+
+            // File.WriteAllText("sample_text.txt", sample_text);
+
+            // string read_text = File.ReadAllText("sample_text.txt");
+
+            // Console.WriteLine(read_text);
+            using (var reader = new StreamReader("file.csv"))
+            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            {    
+                var records = csv.GetRecords<Person>();
+                // Console.WriteLine(records.GetEnumerator());
+                foreach (Person record in records){
+                    Console.WriteLine("Hello");
+                }
+            }
         }
     }
 }
