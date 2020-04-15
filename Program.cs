@@ -17,23 +17,22 @@ namespace testCsharp
     {
         static void Main(string[] args)
         {
-            // string sample_text = "Hello World \n KMP";
+            string sample_text = "Hello World \n KMP";
             
-            // Console.WriteLine(sample_text);
+            Console.WriteLine(sample_text);
 
-            // File.WriteAllText("sample_text.txt", sample_text);
+            File.WriteAllText("sample_text.txt", sample_text);
 
-            // string read_text = File.ReadAllText("sample_text.txt");
+            string read_text = File.ReadAllText("sample_text.txt");
 
-            // Console.WriteLine(read_text);
-            using (var reader = new StreamReader("file.csv"))
-            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
-            {    
-                var records = csv.GetRecords<Person>();
-                // Console.WriteLine(records.GetEnumerator());
-                foreach (Person record in records){
-                    Console.WriteLine("Hello");
-                }
+            Console.WriteLine(read_text);
+            var reader = new StreamReader("file.csv");
+            var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+            var records = csv.GetRecords<Person>();
+            // Console.WriteLine(records.GetEnumerator());
+            foreach (Person record in records){
+                if(record.Name == "one")
+                    Console.WriteLine(record.Id.ToString());
             }
         }
     }
