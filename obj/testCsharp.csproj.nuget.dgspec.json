@@ -43,6 +43,10 @@
             "Json.Net": {
               "target": "Package",
               "version": "[1.0.18, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [

@@ -1,5 +1,7 @@
 using System;
 using Json.Net;
+using Newtonsoft.Json;
+using System.Data;
 
 
 namespace testCsharp
@@ -11,6 +13,8 @@ namespace testCsharp
         public DateTime messageTimestamp {get; set;}
         
         public string[] messageBody;
+        public bool hasJson;
+        public DataTable bodyJson;
 
         public LogMessage(string[] log_params)
         {
@@ -25,15 +29,32 @@ namespace testCsharp
 
             int sub_length = (log_params.Length - 3);
             messageBody = Utility_Funcs.SubArray(log_params, 3, sub_length);
+            hasJson = false;
+            parseBody();
         }
 
         private void parseBody()
         {
-            
+            if(messageBody[0].Contains("#json"))
+            {
+                hasJson = true;
+                string temp = "";
+                foreach (string val in messageBody)
+                {
+                    Console.WriteLine(val);
+                    temp = string.Join("," ,temp , val);
+                    Console.WriteLine(temp);
+                }
+                // temp.Remove(temp.Length-1,1);
+                messageBody = temp.Split("#json");
+                string data = "["+messageBody[1]+",]";
+                Console.WriteLine("JSON DATA!!!!: "+data);
+                bodyJson = JsonConvert.DeserializeObject<DataTable>(data);
+            }
         }
 
         public override string ToString(){
-            string data = JsonNet.Serialize(this);
+            // string data = JsonNet.Serialize(this);
             Console.WriteLine(data);
             return data;
         }
