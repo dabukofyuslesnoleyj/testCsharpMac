@@ -53,12 +53,16 @@ namespace testCsharp
             }
         }
 
-        public override string ToString(){
+        public override string ToString()
+        {
             // string data = JsonNet.Serialize(this);
-            Console.WriteLine(data);
-            return data;
+            // Console.WriteLine(data);
+            // return data;
         }
 
+        public DataTable getBody(){
+            
+        }
 
     }
 }
