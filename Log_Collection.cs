@@ -24,11 +24,22 @@ namespace testCsharp
         private int warningCount;
         private int errorCount;
 
+        private Dictionary <string, int> messageSourceCount;
+
         public Log_Collection (List<LogMessage> logMessages)
         {
             log_list = logMessages;
+            messageSourceCount = new Dictionary<string, int>();
             foreach (LogMessage lm in log_list)
             {
+                if (messageSourceCount.ContainsKey(lm.messageSource))
+                {
+                    messageSourceCount[lm.messageSource]++;
+                }
+                else
+                {
+                    messageSourceCount.Add(lm.messageSource,1);
+                }
                 if(lm.messageType == MessageType.Warning)
                 {
                     warningCount++;
