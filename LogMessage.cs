@@ -44,14 +44,11 @@ namespace testCsharp
                 string temp = "";
                 foreach (string val in messageBody)
                 {
-                    Console.WriteLine(val);
                     temp = string.Join("," ,temp , val);
-                    Console.WriteLine(temp);
                 }
                 // temp.Remove(temp.Length-1,1);
                 messageBody = temp.Split("#json");
                 string data = "["+messageBody[1]+",]";
-                Console.WriteLine("JSON DATA!!!!: "+data);
                 bodyJson = JsonConvert.DeserializeObject<DataTable>(data);
             }
         }
