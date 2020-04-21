@@ -26,9 +26,17 @@ namespace testCsharp
 
         private Dictionary <string, int> messageSourceCount;
 
+        private DateTime startTime;
+        private DateTime endTime;
+        private TimeSpan logDuration;
         public Log_Collection (List<LogMessage> logMessages)
         {
             log_list = logMessages;
+
+            startTime = log_list[0].messageTimestamp;
+            endTime = log_list[log_list.Count - 1].messageTimestamp;
+            logDuration = endTime.Subtract(startTime);
+
             messageSourceCount = new Dictionary<string, int>();
             foreach (LogMessage lm in log_list)
             {
@@ -40,6 +48,7 @@ namespace testCsharp
                 {
                     messageSourceCount.Add(lm.messageSource,1);
                 }
+
                 if(lm.messageType == MessageType.Warning)
                 {
                     warningCount++;
@@ -49,19 +58,6 @@ namespace testCsharp
                     errorCount++;
                 }
             }
-        }
-
-        public List<LogMessage> getListWIthMessageType(MessageType mtype)
-        {
-            List<LogMessage> temp = new List<LogMessage>();
-            foreach (LogMessage lm in log_list)
-            {
-                if(lm.messageType == mtype)
-                {
-                    temp.Add(lm);
-                }
-            }
-            return temp;
         }
 
         public List<LogMessage> getLogs()

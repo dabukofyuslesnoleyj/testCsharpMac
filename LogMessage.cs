@@ -16,8 +16,11 @@ namespace testCsharp
         public bool hasJson;
         public DataTable bodyJson;
 
+        private string completeMessage {get; set;}
+
         public LogMessage(string[] log_params)
         {
+            completeMessage = string.Join("", log_params);
             switch(log_params[0])
             {
                 case "INFO" : messageType = MessageType.Info; break;
@@ -55,13 +58,7 @@ namespace testCsharp
 
         public override string ToString()
         {
-            // string data = JsonNet.Serialize(this);
-            // Console.WriteLine(data);
-            // return data;
-        }
-
-        public DataTable getBody(){
-            
+            return completeMessage;
         }
 
     }
