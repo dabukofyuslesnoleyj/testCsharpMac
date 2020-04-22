@@ -17,7 +17,7 @@ namespace testCsharp
         public DataTable bodyJson;
 
         private string completeMessage {get; set;}
-
+        //last night i lost all my pastience you were f up i was wasted i cant take it
         public LogMessage(string[] log_params)
         {
             completeMessage = string.Join("", log_params);

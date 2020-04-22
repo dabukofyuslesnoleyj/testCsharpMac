@@ -5,6 +5,7 @@ using Json.Net;
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using System.Text.RegularExpressions;
 
 namespace testCsharp
 {
@@ -68,10 +69,17 @@ namespace testCsharp
 
             foreach (string log_message in log_messages)
             {
-                string[] log_params = log_message.Split(",");
+
+                Regex regex = new Regex("(INFO|WARNING|ERROR),(.*?),(.*?),");
+                Match match = regex.Match(log_message);
+                string log_header = match.Groups[0].Value;
+                string[] log_header_split = log_header.Split(",");
+
+                string log_body = log_message.Remove(0, log_header.Length);
+                Console.WriteLine(log_body);
                 
-                LogMessage lm = new LogMessage(log_params);
-                lm.ToString();
+                // LogMessage lm = new LogMessage(log_params);
+                // lm.ToString();
                 
             }
 
