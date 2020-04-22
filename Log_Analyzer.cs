@@ -92,6 +92,7 @@ namespace testCsharp
             using (var writer = new StreamWriter(filename + ".csv"))
             using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
             {
+                //write it oh wrtie oh right peach jam my favorite pick me up peach jam i am the only one
                 csv.WriteRecords(log_list);
             }
         }

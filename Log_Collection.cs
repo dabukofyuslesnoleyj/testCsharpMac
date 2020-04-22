@@ -55,6 +55,9 @@ namespace testCsharp
                 }
                 else if(lm.messageType == MessageType.Error)
                 {
+                    //it gives me the big sad that i have to deal with this situation and after that I AM Still NOT SURE
+                    //What is the right decison to make UGHHHHH WEjfsdgkslbn i want to commit but I am unsure and want
+                    //play safe
                     errorCount++;
                 }
             }
