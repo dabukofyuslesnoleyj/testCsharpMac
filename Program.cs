@@ -75,9 +75,8 @@ namespace testCsharp
                 string log_header = match.Groups[0].Value;
                 string[] log_header_split = log_header.Split(",");
 
-                regex = new Regex("!((INFO|WARNING|ERROR),(.*?),(.*?),)");
-                match = regex.Match(log_message);
-                string log_body = match.Groups[0].Value;
+                string log_body = log_message.Remove(0, log_header.Length);
+                Console.WriteLine(log_body);
                 
                 // LogMessage lm = new LogMessage(log_params);
                 // lm.ToString();
